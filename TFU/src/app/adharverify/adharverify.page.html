@@ -1,0 +1,33 @@
+<ion-content class="ion-padding">
+  <!-- <div>
+      <img src="assets/img/side-img.png"> 
+    </div> -->
+  <div class="header-prt"> 
+    <div class="mobile-put">
+    <p class="otp-heading ion-text-center">
+        Verify with eKYC Enter Aadhaar Number
+    </p>
+ 
+    <form>
+        <ion-grid>
+            <ion-row color="primary">
+                  <ion-col size="12">
+                    <ion-input class="code" type="number" placeholder="0000 0000 0000" [(ngModel)]="otp1" name="otp1" #otpp1 (keyup)="next($event,otpp2,otpp1)"></ion-input>
+                  </ion-col>
+                                  
+                <ion-col size="12" class="ion-text-center">
+                    <ion-button shape="round"   (click)="gotodocuments()" style="--background: #006462;
+                    color: #fff;">Continute </ion-button> 
+              
+                </ion-col>
+            </ion-row>
+         
+          </ion-grid>
+
+    </form>
+ 
+</div> 
+</div>    
+</ion-content>
+
+
